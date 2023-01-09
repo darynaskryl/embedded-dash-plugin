@@ -1,7 +1,6 @@
-# Plugin Sample = Data Segregation Solution based on using embedded dashboard approach
+# Plugin Sample - Data Segregation Solution based on using embedded dashboard approach
 
 ## How it works
-***
 
 This sample will help you to get started with the [embedded dashboards solution](https://www.twilio.com/blog/separate-data-in-flex-insights) to implement data segregation functionality in Flex. The plugin removes all default Flex views related to Flex Insights and instead adds a custom view containing embedded GoodData dashboards that contain URl parameters used to dynamically filter data according to the current user permissions.
 To construct the URL you will need to obtain a few identifiers from the analytics portal 
@@ -36,13 +35,10 @@ The dashboard identifier will be further used as variable `dashboard1Id` and `da
 
 
 ## Warning
-***
 For the solution to work as expected additional configuration of the Flex Insights workspace is required - please work with PS or support to enable necessary feature flag.
 
 
 ## Setup
-***
-
 Make sure you have [Node.js](https://nodejs.org) as well as [`npm`](https://npmjs.com). We support Node >= 10.12 (and recommend the _even_ versions of Node). Afterwards, install the dependencies by running `npm install`:
 
 ```bash
@@ -65,7 +61,5 @@ twilio plugins:install @twilio-labs/plugin-flex
 ```
 
 ## Development
-***
-
 Run `twilio flex:plugins --help` to see all the commands we currently support. For further details on Flex Plugins refer to our documentation on the [Twilio Docs](https://www.twilio.com/docs/flex/developer/plugins/cli) page.
 
