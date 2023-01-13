@@ -4,7 +4,7 @@ import { FlexPlugin } from '@twilio/flex-plugin';
 import * as Flex from '@twilio/flex-ui';
 
 import DashboardSelector from './components/DashboardSelector/DashboardSelector.jsx'
-import reducers, { namespace } from './states';
+//import reducers, { namespace } from './states';
 
 const PLUGIN_NAME = 'EmbeddedDashPlugin';
 
@@ -21,7 +21,7 @@ export default class EmbeddedDashPlugin extends FlexPlugin {
    * @param manager { import('@twilio/flex-ui').Manager }
    */
   async init(flex, manager) {
-    this.registerReducers(manager);
+    //this.registerReducers(manager);
 
     const removeDefaultDashboard = ["dashboards", "analyze", "questionnaires"];
     removeDefaultDashboard.forEach(key => {
@@ -63,7 +63,7 @@ export default class EmbeddedDashPlugin extends FlexPlugin {
    *
    * @param manager { Flex.Manager }
    */
-  registerReducers(manager) {
+  /*registerReducers(manager) {
     if (!manager.store.addReducer) {
       // eslint-disable-next-line
       console.error(`You need FlexUI > 1.9.0 to use built-in redux; you are currently on ${VERSION}`);
@@ -71,5 +71,5 @@ export default class EmbeddedDashPlugin extends FlexPlugin {
     }
 
     manager.store.addReducer(namespace, reducers);
-  }
+  }*/
 }
